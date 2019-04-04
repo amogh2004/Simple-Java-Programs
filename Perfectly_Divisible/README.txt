@@ -1,9 +1,3 @@
-GROUP DETAILS:
-Group 11, Class CSE 4A
-Akshatha Ramesh    	1KS17CS003
-Amogh R			1KS17CS005
-Nikhil Subramanya  	1KS17CS046
-
 EXECUTION OF THE PROGRAM:
 Our program accepts two command line arguments (M,N). So to run the program, we have to type the command 
 	javac HA01G11.java			: to compile the program 
@@ -17,6 +11,7 @@ DESCRIPTION:
 
 CHALLENGES/ISSUES:
 We faced a problem when our program extracted only one digit, checked only with respect to that digit and gave output as DIVISIBLE.
+
 Example:
 java HA01G11 1 100
 The number 1 is perfectly divisible
