@@ -1,0 +1,14 @@
+EXECUTION OF THE PROGRAM:
+To run the program, we have to type the command 
+	javac HA02G11_1.java			: to compile the program 
+	java HA02G11_1				: to execute the program 
+
+DESCRIPTION:
+1) The main() method reads a file, fetches data and stores the inputs into various arrays. It also accepts the minimum profit to be achieved and 
+   calculates the target profit.
+2) The method bubblesort() takes the profit array, index array and number of events as input, sorts them in ascending order of profit, also indices
+   respectively.
+
+CHALLENGES/ISSUES:
+We are not able to dynamically pass the name of a string while reading inputs from a file. Rest all is perfectly working. But not able to fetch the
+output as we are not able to read the arrays dynamically.
