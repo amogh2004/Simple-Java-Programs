@@ -1,0 +1,4 @@
+201A|201B|201C|202A|202B|202C|203A|203B|203C
+12|4|10|8|7|15|9|3|5
+Boundary Line|Dance KSIT Dance|Sa Re Ga Ma Pa|Super Minute|Artistic Arsenal|Surgical Strike|Roadies|Jabardasth Mad Ads|Super Singer
+300|100|50|80|120|150|200|175|125
