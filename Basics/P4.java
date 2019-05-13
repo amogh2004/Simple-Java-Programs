@@ -1,7 +1,6 @@
 import java.util.*;
 import java.io.*;
 
-
 public class P4
 {
     static int a[];
