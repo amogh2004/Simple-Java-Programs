@@ -17,7 +17,7 @@ import java.util.Scanner;
 	}	
 	
 }
-	public class p1a{
+	public class P1A{
 	public static void main(String[] args){
 		Scanner ob=new Scanner(System.in);
 		Scanner ob1=new Scanner(System.in);

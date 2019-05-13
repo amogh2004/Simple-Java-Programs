@@ -66,7 +66,7 @@ public class P12
 				x[i]=0;
 			}
 		x[1]=1;
-		System.out.println("\n Hamiltonian Cycles are");
+        System.out.println("\nHAMILTONIAN CYCLES ARE:");
 		H_Cycle(G,n,2);
 	}
 }

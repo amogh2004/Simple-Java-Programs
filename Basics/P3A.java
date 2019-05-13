@@ -1,5 +1,5 @@
 import java.util.*;
-public class P3a {
+public class P3A {
 public static void main(String args[]){
 	int a,b;
 

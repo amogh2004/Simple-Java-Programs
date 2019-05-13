@@ -12,8 +12,8 @@ class MyThread1 extends Thread
 			while(i<=n)
 			{
 				Random random=new Random();
-				p3b.r=random.nextInt(100);
-				System.out.println(i+"->random integer :" +p3b.r);
+				P3B.r=random.nextInt(100);
+				System.out.println(i+"->random integer :" +P3B.r);
 				new MyThread2().start();
 				new MyThread3().start();
 				Thread.sleep(1000);
@@ -31,17 +31,17 @@ class MyThread2 extends Thread
 {
 	public void run()
 	{
-		System.out.println("square of"+p3b.r+ "is"+p3b.r*p3b.r);
+		System.out.println("square of"+P3B.r+ "is"+P3B.r*P3B.r);
 	}
 }
 class MyThread3 extends Thread
 {
 	public void run()
 	{
-		System.out.println("cube of" +p3b.r+ "is"+p3b.r*p3b.r*p3b.r);
+		System.out.println("cube of" +P3B.r+ "is"+P3B.r*P3B.r*P3B.r);
 	}
 }
-public class p3b{
+public class P3B{
 	static int r;
 	public static void main (String[] args){
 		MyThread1 thread1=new MyThread1();

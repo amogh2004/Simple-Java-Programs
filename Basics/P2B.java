@@ -22,7 +22,7 @@ class Customer
 	
 	
 
-public class p2b {
+public class P2B {
 	public static void main(String args[])
 			{
 			Customer obj=new Customer();

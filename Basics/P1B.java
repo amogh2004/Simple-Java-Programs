@@ -32,7 +32,7 @@ import java.util.Scanner;
 		}
 	}
 	
-	public class p1b{
+	public class P1B{
 		public static void main(String[] args){
 			Scanner read=new Scanner(System.in);
 			System.out.println("enter stack size");

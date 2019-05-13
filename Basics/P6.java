@@ -1,34 +1,39 @@
 import java.util.*;
 
-public class P6 {
+public class P6
+{
 	static int []p=new int[50];
 	static int []w=new int[50];
 	static int []x=new int[50];
-	static int[]t=new int[50];
+	static int []t=new int[50];
 	static double maxprofit;
 	static int n,m,i,j;
 	
 	static void dynamicknapsack(int n,int w[],int p[],int m)
 	{
-		int [][]v=new int[n+1][m+1];
-		for(i=0;i<=n;i++)
+		int v[][]=new int[n+1][m+1];
+		
+        for(i=0;i<=n;i++)
 			v[i][0]=0;
 		for(j=0;j<=m;j++)
 			v[0][j]=0;
-		for (i=1;i<=n;i++)
+		
+        for (i=1;i<=n;i++)
 			for(j=1;j<=m;j++)
 				if(j<w[i])
 					v[i][j]=v[i-1][j];
 				else
 					v[i][j]=max(v[i-1][j],v[i-1][j-w[i]]+p[i]);
-		System.out.println("solutin table");
+		
+        System.out.println("Solution Table:");
 		for(i=0;i<=n;i++)
-		{
+        {
 			for(j=0;j<=m;j++)
 				System.out.print(v[i][j]+"\t");
 			System.out.println("\n");
-		}
-		System.out.println("optimal olution for dynamic method:" +v[n][m]);
+        }
+		
+        System.out.println("OPTIMAL SOLUTION FOR DYNAMIC METHOD: " +v[n][m]);
 		i=n;
 		j=m;
 		while(i!=0 && j!=0)
@@ -40,20 +45,24 @@ public class P6 {
 			}
 			i=i-1;
 		}
-		System.out.println("The solution vector for dynamic method is");
+		
+        System.out.println("The Solution Vector for DYNAMIC METHOD is:");
 		for(i=1;i<=n;i++)
 			System.out.print(x[i]+"\t");
-		System.out.println("\n");
+		System.out.println();
 	}
-	static int max(int a,int b)
+	
+    static int max(int a,int b)
 	{
-		return(a>b)?a:b;
+		return (a>b)?a:b;
 	}
-	static void greedyknapsack(int n,int w[],int p[],int m)
+	
+    static void greedyknapsack(int n,int w[],int p[],int m)
 	{
 		int rc=m;
 		bubblesort(n,w,p,t);
-		for(i=1;i<=n;i++)
+		
+        for(i=1;i<=n;i++)
 		{
 			if(w[t[i]]>rc)
 				continue;
@@ -61,12 +70,14 @@ public class P6 {
 			rc-=w[t[i]];
 			maxprofit+=p[t[i]];
 		}
-		System.out.println("optimal solution sor greedy method:" +maxprofit);
-		System.out.println("solution vector for geedy method:");
-		for(i=1;i<=m;i++)
+		System.out.println("OPTIMAL SOLUTION FOR GREEDY METHOD: " +maxprofit);
+		System.out.println("Solution Vector for GREEDY METHOD: ");
+		for(i=1;i<=n;i++)
 			System.out.print(x[i]+"\t");
+        System.out.println();
 	}
-	static void bubblesort (int n,int w[],int p[],int t[])
+	
+    static void bubblesort (int n,int w[],int p[],int t[])
 	{
 		int temp;
 		for(i=1;i<=n;i++)
@@ -80,20 +91,26 @@ public class P6 {
 					t[j+1]=temp;
 				}
 	}
-	public static void main(String args[])
+	
+    public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
-		System.out.println("enter the no of objects:");
+		
+        System.out.println("Enter the number of Objects:");
 		n=sc.nextInt();
-		System.out.println("enter the objects weight:");
+		
+        System.out.println("Enter the objects' Weight:");
 		for(i=1;i<=n;i++)
 			w[i]=sc.nextInt();
-		System.out.println("enter the objects profits:");
+		
+        System.out.println("Enter the objects' Profits:");
 		for(i=1;i<=n;i++)
 			p[i]=sc.nextInt();
-		System.out.println("enter the maximum capacity:");
+		
+        System.out.println("Enter the Maximum Capacity:");
 		m=sc.nextInt();
-		dynamicknapsack(n,w,p,m);
+		
+        dynamicknapsack(n,w,p,m);
 		for(i=1;i<=n;i++)
 			x[i]=0;
 		greedyknapsack(n,w,p,m);

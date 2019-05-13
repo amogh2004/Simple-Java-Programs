@@ -79,7 +79,7 @@ public class P5 {
 		long st,et;
 		Scanner read=new Scanner(System.in);
 		Random random=new Random();
-		PrintWriter out=new PrintWriter(new File("Random.txt"));
+		PrintWriter out=new PrintWriter(new File("Random_P5.txt"));
 		System.out.println("enter the no of elements(>5000)");
 		n=read.nextInt();
 		a=new int[n];
@@ -93,7 +93,7 @@ public class P5 {
 		st=System.nanoTime();
 		mergesort(a,0,n-1);
 		et=System.nanoTime()-st;
-		PrintWriter outA = new PrintWriter(new File("Ascending.txt"));
+		PrintWriter outA = new PrintWriter(new File("Ascending_P5.txt"));
 		for(i=0;i<n;i++)
 			outA.print(a[i]+"\t");
 		outA.close();
@@ -106,7 +106,7 @@ public class P5 {
 		st= System.nanoTime();
 		mergesort(a,0,n-1);
 		et=System.nanoTime()-st;
-		PrintWriter outD= new PrintWriter(new File("Descending.txt"));
+		PrintWriter outD= new PrintWriter(new File("Descending_P5.txt"));
 		for(i=0;i<n;i++)
 			outD.print(a[i]+"\t");
 		outD.close();

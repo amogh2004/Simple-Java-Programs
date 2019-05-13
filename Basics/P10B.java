@@ -50,6 +50,6 @@ public class P10B
 		
 		min_cost = TSP_Dynamic(1,visited);
 		
-		System.out.println("The cost of optimal tour is "+min_cost);
+		System.out.println("COST OF OPTIMAL TOUR= "+min_cost);
 	}
 }
