@@ -37,7 +37,7 @@ public class P9
                 {
                     if(p==q)
                         continue;
-                    if((cost[p][q]<min) && (v[p]==1) && (v[q]!=1))
+                    if( (cost[p][q]<min) && (v[p]==1) && (v[q]!=1) )
                     {
                         min=cost[p][q];
                         i=p;

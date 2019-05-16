@@ -28,20 +28,22 @@ public class P1A
         System.out.println("Enter the number of Students:");
 		int n=ob.nextInt();
 		Student str[] = new Student[n];
-		for(int i=0;i<n;i++)
+		
+        for(int i=0;i<n;i++)
 		{
 			System.out.println("Enter Student Details:\n" +(i+1));
-			System.out.println("Enter the USN\n");
+			System.out.println("Enter the USN");
 			String usn=ob1.nextLine();
-			System.out.println("Enter the Name\n");
+			System.out.println("Enter the Name");
 			String name=ob1.nextLine();
-			System.out.println("Enter the Branch\n");
+			System.out.println("Enter the Branch");
 			String branch=ob1.nextLine();
 			System.out.println("Enter the Phone Number");
 			String phno=ob1.nextLine();
 			str[i]=new Student(usn,name,branch,phno);
 		}
-	    for(int i=0;i<n;i++)
+	    
+        for(int i=0;i<n;i++)
 		{
 			System.out.println("USN\t\t NAME\t\t BRANCH\t\t PHONE NUMBER\t\t");
 	        str[i].display();

@@ -18,7 +18,7 @@ public class P8
 		if(u!=v)
 		{
 			noe++;
-			System.out.println(noe-1 +") Edge("+a+","+b+")=" +min);
+			System.out.println(noe-1 +") Edge("+a+","+b+")= "+min);
 			mincost+=min;
 			parent[v]=u;
 		}

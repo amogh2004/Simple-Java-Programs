@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-class stack
+class Stack
 {
     int stack[];
     int top=-1, size;
     
-    stack(int size)
+    Stack(int size)
     {
         this.size=size;
         stack=new int[size];
@@ -49,7 +49,7 @@ public class P1B
         System.out.println("Enter Stack Size");
         int size = read.nextInt();
         
-        stack ob = new stack(size);
+        Stack ob = new Stack(size);
         
         for(;;)
         {

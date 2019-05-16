@@ -66,7 +66,7 @@ public class P4
         Scanner read = new Scanner(System.in);
         Random random = new Random();
         
-        PrintWriter out = new PrintWriter(new File("Random_P4.txt"));
+        PrintWriter outR = new PrintWriter(new File("Random_P4.txt"));
         System.out.println("Enter the number of elements(>5000)");
         n = read.nextInt();
         a = new int[n];
@@ -74,29 +74,29 @@ public class P4
         for(i=0;i<n;i++)
         {
             a[i] = random.nextInt(n)+1;
-            out.print(a[i]+"\t");
+            outR.print(a[i]+"\t");
         }
         System.out.println("The total numbers generated: "+i);
-        out.close();
+        outR.close();
+        
         st = System.nanoTime();
         quickSort(a,0,n-1);
         et = System.nanoTime()-st;
-        
         PrintWriter outA = new PrintWriter(new File("Ascending_P4.txt"));
         for(i=0;i<n;i++)
             outA.print(a[i]+"\t");
         outA.close();
         System.out.println("THE TIME COMPLEXITY FOR WORST CASE IS= "+(et/1000000000.0)+" secs");
+        
         st = System.nanoTime();
         quickSort(a,0,n-1);
         et = System.nanoTime()-st;
-        
         System.out.println("THE TIME COMPLEXITY FOR BEST CASE IS= "+(et/1000000000.0)+" secs");
+        
         flag = false;
         st = System.nanoTime();
         quickSort(a,0,n-1);
         et = System.nanoTime()-st;
-        
         PrintWriter outD = new PrintWriter(new File("Descending_P4.txt"));
         for(i=0;i<n;i++)
             outD.print(a[i]+"\t");

@@ -18,7 +18,7 @@ public class P6
 		for(j=0;j<=m;j++)
 			v[0][j]=0;
 		
-        for (i=1;i<=n;i++)
+        for(i=1;i<=n;i++)
 			for(j=1;j<=m;j++)
 				if(j<w[i])
 					v[i][j]=v[i-1][j];
