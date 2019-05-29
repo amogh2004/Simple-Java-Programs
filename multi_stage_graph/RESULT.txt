@@ -1,0 +1,25 @@
+OUTPUT 1:
+java multistage input.txt
+Enter the number of vertices in the graph:
+11
+THE SHORTEST DISTANCE BETWEEN 's' AND 't'= 35
+
+
+OUTPUT 2:
+java multistage
+Enter the number of vertices in the graph:
+11
+TARGET FILE NOT FOUND!!!
+
+OUTPUT 3:
+java multistage inpu.txt
+Enter the number of vertices in the graph:
+11
+TARGET FILE NOT FOUND!!!
+
+OUTPUT 4:
+java multistage input.txt
+Enter the number of vertices in the graph:
+aa
+NOT A VALID INTEGER INPUT!!!
+
