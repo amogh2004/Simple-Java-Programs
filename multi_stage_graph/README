@@ -1,0 +1,9 @@
+EXECUTION OF THE PROGRAM:
+Our program accepts one command line arguments <graphfilename>.txt. So to run the program, we have to type the command 
+	javac multistage.java			: to compile the program 
+	java multistage <graphfilename>.txt	: to execute the program, where M and N is the range of numbers in which we are checking if they 											  are perfectly divisible by it’s digits.  
+
+DESCRIPTION:
+1) The main() function accepts one command line argument <graphfilename>.txt, inputs the graph from file and calls the method shortestDist().
+2) The method shortestDist() calculates the shortest distance from source to destination and returns the value to the main() method.
+3) The main method prints the shortest distance from the source to destination.
