@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class Stack
 {
+    Scanner read = new Scanner(System.in);
     int stack[];
     int top=-1, size;
     
@@ -11,12 +12,16 @@ class Stack
         stack=new int[size];
     }
     
-    void push(int ele)
+    void push()
     {
         if(top==size-1)
             System.out.println("STACK OVERFLOW");
         else
+        {
+            System.out.println("Enter the element to PUSH: ");
+            int num=read.nextInt();
             stack[++top]=ele;
+        }
     }
 	
     void pop()
@@ -63,9 +68,7 @@ public class P1B
             
             switch(choice)
             {
-                case 1: System.out.println("Enter the element to PUSH: ");
-                        int num=read.nextInt();
-                        ob.push(num);
+                case 1: ob.push();
                         break;
 				case 2: ob.pop();
                         break;

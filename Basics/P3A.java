@@ -4,11 +4,10 @@ public class P3A
     public static void main(String args[])
     {
         int a,b;
-
-        Scanner read=new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
         System.out.println("Enter TWO Numbers:");
-        a=read.nextInt();
-        b=read.nextInt();
+        a = read.nextInt();
+        b = read.nextInt();
         try
         {
             int quotient = a/b;
@@ -16,11 +15,11 @@ public class P3A
         }
         catch(ArithmeticException ae)
         {
-            System.out.println(ae+":DIVIDE BY ZERO ERROR!!!");
+            System.out.println("DIVIDE BY ZERO ERROR!!!");
         }
         finally
         {
-            float result=(float)a/b;
+            float result = (float)a/b;
             System.out.println("Floating Point Division Quotient= "+result);
         }
     }

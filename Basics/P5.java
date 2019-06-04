@@ -22,7 +22,7 @@ public class P5
     static void merge(int a[],int low,int mid,int high)
 	{
 		int i1,i2,j,k;
-		int [] b=new int[n];
+		int b[]=new int[n];
 		i1=j=low;
 		i2=mid+1;
 		

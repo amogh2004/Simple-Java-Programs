@@ -40,7 +40,7 @@ public class P1A
 			String branch=ob1.nextLine();
 			System.out.println("Enter the Phone Number");
 			String phno=ob1.nextLine();
-			str[i]=new Student(usn,name,branch,phno);
+			str[i] = new Student(usn,name,branch,phno);
 		}
 	    
         for(int i=0;i<n;i++)

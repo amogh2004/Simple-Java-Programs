@@ -56,7 +56,7 @@ public class P7
         shortest(v,cost,dist,n);
         System.out.println("SHORTEST PATHS:");
         for(j=1;j<=n;j++)
-        System.out.println(v+"-->"+j+"= "+dist[j]);
+            System.out.println(v+"-->"+j+"= "+dist[j]);
     }
 }
 	

@@ -4,15 +4,16 @@ class MyThread1 extends Thread
 {
 	public void run()
 	{
-		int i=1;
-		Scanner read=new Scanner(System.in);
+		int i = 1;
+		Scanner read = new Scanner(System.in);
+        Random random = new Random();
         System.out.println("Enter the number of RANDOM INTEGERS to be produced:");
-		int n=read.nextInt();
+		int n = read.nextInt();
 		try
 		{
 			while(i<=n)
 			{
-				Random random=new Random();
+				
 				P3B.r=random.nextInt(100);
 				System.out.println("Random Integer-->"+i+"= "+P3B.r);
 				new MyThread2().start();
