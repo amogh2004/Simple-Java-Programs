@@ -1,4 +1,3 @@
-//Queston 7: Knapsack Problem
 //Organiser of an event management company to conduct multiple events on a given day
 import java.util.*;
 import java.io.*;
