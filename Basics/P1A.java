@@ -50,11 +50,3 @@ public class P1A
 		}
 	}
 }
-	
-			
-		
-		
-	
-
-	
-
